@@ -1,4 +1,4 @@
-FROM registry.dataos.io/library/ldp-php:5.5.34-apache
+FROM library/php:5.6-apache
 
 RUN sed -i "s/http:\/\/httpredir.debian.org/http:\/\/mirrors.aliyun.com/g" /etc/apt/sources.list && \
     sed -i "s/http:\/\/security.debian.org/http:\/\/mirrors.aliyun.com\/debian-security/g" /etc/apt/sources.list
